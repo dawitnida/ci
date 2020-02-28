@@ -1,6 +1,6 @@
 provider "aws" {
-  profile    = "dev"
-  region     = "eu-west-1"
+  profile = "dev"
+  region  = "eu-west-1"
 }
 
 data "aws_region" "current" {}
@@ -32,8 +32,4 @@ resource "aws_instance" "web" {
     Environment = "stage"
     Profile     = "dev"
   }
-}
-
-output "ip" {
-  value = "${aws_instance.web.public_ip}"
 }
