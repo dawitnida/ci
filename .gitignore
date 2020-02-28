@@ -11,5 +11,3 @@
 *.plan
 *.tfplan
 terraform.log
-
-
