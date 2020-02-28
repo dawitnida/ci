@@ -14,7 +14,7 @@ pipeline {
         }
         stage('git clone') {
             steps {
-                sh 'sudo rm -r *;sudo git clone https://github.com/dawitnida/jenkins.git'
+                sh 'sudo rm -r *;sudo git clone https://github.com/dawitnida/ci.git'
             }
         }
         stage('terraform init') {
@@ -24,7 +24,7 @@ pipeline {
         }
         stage('terraform plan') {
             steps {
-                sh 'ls ./jenkins; sudo /home/ec2-user/terraform plan ./jenkins/src'
+                sh 'ls ./jenkins; sudo /home/ec2-user/terraform plan ./ci/src'
             }
         }
         stage('terraform ended') {
