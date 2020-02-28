@@ -1,0 +1,15 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# General
+/.idea/*
+.DS_Store
+*.orig
+
+# Ignore .terraform work directories and related files
+.terraform/
+*.tfstate.*
+*.plan
+*.tfplan
+terraform.log
+
+
