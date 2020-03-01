@@ -16,7 +16,11 @@ jobs:
           fetch-depth: 0
 
       - name: Log into registry
-        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+        run: |
+          echo "${{ secrets.DOCKER_REGISTRY_URL }}"
+          echo "${{ secrets.DOCKER_REPOSITORY_NAME }}"
+          echo "${{ secrets.DOCKER_USERNAME }}"
+          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
       - name: Build and push the images
         run: |
