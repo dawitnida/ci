@@ -6,6 +6,8 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/app
+
+# Install the required packages
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
 COPY . .
