@@ -2,4 +2,4 @@
 
 # ci
 
-Testing Jen-kins with terraform
+Testing Jenkins with terraform and packer tempalte
