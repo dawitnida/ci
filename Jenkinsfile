@@ -32,7 +32,5 @@ pipeline {
                 sh 'echo "Ended....!!"'
             }
         }
-
-        
     }
 }
