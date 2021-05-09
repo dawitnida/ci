@@ -2,5 +2,5 @@
 
 # ci
 
-Testing Jen-kins with terraform
+Testing Jenkins, GitHub Actions and terraform.
 
